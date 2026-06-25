@@ -1457,3 +1457,38 @@ body.dark-mode .fa-solid {
     color: #FAF8F5 !important;
     fill: #FAF8F5 !important;
 }
+
+/* Update your text rules at the bottom of styles.css to include the new link class */
+body.dark-mode h1, 
+body.dark-mode h2, 
+body.dark-mode h3, 
+body.dark-mode h4, 
+body.dark-mode p, 
+body.dark-mode span, 
+body.dark-mode a, 
+body.dark-mode li, 
+body.dark-mode .logo,
+body.dark-mode .instagram-icon-link {
+    color: #FAF8F5 !important;
+    opacity: 1 !important;
+}
+
+/* ==========================================================================
+   INSTAGRAM ICON SIZE & ALIGNMENT FIX
+   ========================================================================== */
+.instagram-icon-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    
+    /* This makes the sizing copy your other icons exactly */
+    font-size: 1.5rem; 
+    color: #2C221E; /* Matches your light mode text color */
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.instagram-icon-link:hover {
+    transform: translateY(-3px);
+    color: #e1306c; /* Optional: adds a smooth Instagram pink tint on hover */
+}
